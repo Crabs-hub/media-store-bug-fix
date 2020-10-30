@@ -134,4 +134,32 @@ public class Problem3Test {
         assertEquals(expect, fees);
     }
 
+    @Test
+    public void testBugFixEqualsBookRomance(){
+        BookRomance justID = new BookRomance (null,null);
+        Book justID2 = new BookRomance(justID);
+        assertEquals(justID, justID2);
+    }
+
+    @Test
+    public void testBugFixEqualsBookFiction(){
+        BookFiction justID = new BookFiction (null,null,null);
+        Book justID2 = new BookFiction(justID);
+        assertEquals(justID, justID2);
+    }
+
+    @Test
+    public void testBugFixEqualsMovieAction(){
+        MovieAction justID = new MovieAction (null,null);
+        Movie justID2 = new MovieAction(justID);
+        assertEquals(justID, justID2);
+    }
+
+    @Test
+    public void testBugFixEqualsMovieComedy(){
+        MovieComedy justID = new MovieComedy (null,null);
+        Movie justID2 = new MovieComedy(justID);
+        assertEquals(justID, justID2);
+    }
+
 }
